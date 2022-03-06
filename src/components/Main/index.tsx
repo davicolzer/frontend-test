@@ -1,24 +1,18 @@
-import { Flex, FlexProps } from "@chakra-ui/react";
+import { Box, Flex, FlexProps, Text } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface MainProps extends FlexProps {
   children?: ReactNode;
+  titlePage: string;
 }
 
-export default function Main({ children,...rest }: MainProps) {
+export default function Main({ children, titlePage, ...rest }: MainProps) {
   return (
-    <Flex
-      as={"main"}
-      flex={1}
-      maxWidth={1480}
-      bg={"white"}
-      px={6}
-      my={6}
-      borderRadius={8}
-      mx={"auto"}
-      {...rest}
-    >
+    <Box as={"main"} m={4} {...rest}>
+      <Text as={"h1"} fontSize={["2xl", "3xl"]} fontWeight="bold" my={2}>
+        {titlePage}
+      </Text>
       {children}
-    </Flex>
+    </Box>
   );
 }

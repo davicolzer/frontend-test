@@ -8,8 +8,8 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'purple.700',
-        color: 'purple.900'
+        bg: 'white',
+        color: 'black'
       },
       
     }
