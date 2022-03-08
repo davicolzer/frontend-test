@@ -1,17 +1,13 @@
-import { Box, Flex, FlexProps, Text } from "@chakra-ui/react";
+import { Box, BoxProps, Flex, Text } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
-interface MainProps extends FlexProps {
+interface MainProps extends BoxProps {
   children?: ReactNode;
-  titlePage: string;
 }
 
-export default function Main({ children, titlePage, ...rest }: MainProps) {
+export function Main({ children, ...rest }: MainProps) {
   return (
     <Box as={"main"} m={4} {...rest}>
-      <Text as={"h1"} fontSize={["2xl", "3xl"]} fontWeight="bold" my={2}>
-        {titlePage}
-      </Text>
       {children}
     </Box>
   );

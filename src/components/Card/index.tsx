@@ -8,8 +8,10 @@ interface CardProps extends FlexProps {
 export function Card({ children, ...rest }: CardProps) {
   return (
     <Flex
-      borderRadius={8}
+      boxShadow={"xl"}
+      bg={"white"} 
       p={8}
+      borderRadius={8}
       {...rest}
     >
       {children}
