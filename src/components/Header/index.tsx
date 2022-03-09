@@ -1,4 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
+import { H1 } from "../Form/H1";
 import { Logo } from "./Logo";
 
 interface HeaderProps {
@@ -8,9 +9,9 @@ interface HeaderProps {
 export function Header({ titlePage }: HeaderProps) {
   return (
     <Flex as="header" w="100%" my="4" align="center">
-      <Text as={"h1"} fontSize={["2xl", "3xl"]} fontWeight="bold" my={2}>
+      <H1>
         {titlePage}
-      </Text>
+      </H1>
     </Flex>
   );
 }
