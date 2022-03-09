@@ -1,5 +1,5 @@
 import { Box, Flex, ListItem, UnorderedList } from "@chakra-ui/react";
-import { Logo } from "../Header/Logo";
+import { Logo } from "../Logo";
 
 export function Sidebar() {
   return (

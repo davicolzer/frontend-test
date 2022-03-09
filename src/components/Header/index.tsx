@@ -1,6 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { H1 } from "../Form/H1";
-import { Logo } from "./Logo";
+import { Logo } from "../Logo";
 
 interface HeaderProps {
   titlePage: string;
