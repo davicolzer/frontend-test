@@ -11,7 +11,7 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import { Card } from "../../components/Card";
-import { Content } from "../../components/Content";
+import { Content } from "../../Templates/Content";
 import { H2 } from "../../components/Form/H2";
 import { Main } from "../../components/Main";
 import { Sidebar } from "../../components/Sidebar";

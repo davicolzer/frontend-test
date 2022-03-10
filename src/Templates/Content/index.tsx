@@ -1,8 +1,8 @@
 import { Box, BoxProps, Flex, Stack } from "@chakra-ui/react";
 import Head from "next/head";
 import { ReactNode } from "react";
-import { Header } from "../Header";
-import { Sidebar } from "../Sidebar";
+import { Header } from "../../components/Header";
+import { Sidebar } from "../../components/Sidebar";
 
 interface ContentProps extends BoxProps {
   titlePage: string;
