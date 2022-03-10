@@ -7,7 +7,7 @@ interface MainProps extends BoxProps {
 
 export function Main({ children, ...rest }: MainProps) {
   return (
-    <Box as={"main"} m={4} {...rest}>
+    <Box as={"main"} {...rest}>
       {children}
     </Box>
   );

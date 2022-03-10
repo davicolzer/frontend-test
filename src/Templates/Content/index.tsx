@@ -19,9 +19,9 @@ export function Content({
       <Head>
         <title>{`Bought_it | ${titlePage}`}</title>
       </Head>
-      <Flex flex={1} maxWidth={1480} px={6} mx={"auto"} {...rest}>
+      <Flex flex={1} maxWidth={1480} mx={"auto"} {...rest}>
       <Sidebar />
-        <Stack width={"100%"}>
+        <Stack width={"100%"} px={6}>
 
           <Header titlePage={titlePage}/>
       

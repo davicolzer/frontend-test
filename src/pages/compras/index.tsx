@@ -1,8 +1,8 @@
 import { Content } from "../../Templates/Content";
 
-export default function Purchases(){
+export default function Compras(){
   return (
-    <Content titlePage={"Purchases"}>
+    <Content titlePage={"Compras"}>
 
     </Content>
   )
