@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export function Header({ titlePage }: HeaderProps) {
   return (
-    <Flex as="header" w="100%" my="4" align="center">
+    <Flex as={"header"} w={"100%"} my={2} align={"center"}>
       <H1>
         {titlePage}
       </H1>

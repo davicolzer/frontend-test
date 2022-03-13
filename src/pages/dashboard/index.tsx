@@ -1,62 +1,42 @@
-import {
-  Box,
-  Button,
-  Stack,
-  Table,
-  Tbody,
-  Td,
-  Text,
-  Th,
-  Thead,
-  Tr,
-} from "@chakra-ui/react";
-import { Card } from "../../components/Card";
+import { Stack } from "@chakra-ui/react";
 import { Content } from "../../Templates/Content";
 import { H2 } from "../../components/Form/H2";
 import { Main } from "../../components/Main";
-import { Sidebar } from "../../components/Sidebar";
+import { HomeButtons } from "./DashboardButtons";
+import { Table } from "../../components/Table";
+import { useEffect, useState } from "react";
 
 export default function Dashboard() {
+  const [columns, setColumns] = useState<string[]>();
+  const [data, setData] = useState<{}[]>();
+
+  useEffect(()=>{
+    setColumns([
+      "Nome do item",
+      "Solicitante",
+      "Prazo",
+      "Valor",
+      "Ações"
+    ])
+    setData([
+      {
+        name: "Bolsa",
+        requester: "Davi Colzer Lira",
+        deadline: new Date(2022, 2, 28),
+        valor: 50
+      }
+    ])
+
+    
+  },[])
+
   return (
     <Content titlePage={`Dashboard`}>
       <Main>
+        <HomeButtons />
         <Stack>
           <H2>Compras Recentes</H2>
-          <Card as={"div"}>
-            <Table colorScheme={"purple"}>
-              <Thead>
-                <Tr>
-                  <Th>Nome do item</Th>
-                  <Th>Solicitante</Th>
-                  <Th>Prazo</Th>
-                  <Th>Valor</Th>
-                  <Th></Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                <Tr>
-                  <Td>Bolsa</Td>
-                  <Td>Davi Colzer Lira</Td>
-                  <Td>
-                    {new Date(2022, 2, 28).toLocaleDateString("pt-BR", {
-                      day: "2-digit",
-                      month: "2-digit",
-                      year: "numeric",
-                    })}
-                  </Td>
-                  <Td>
-                    {Intl.NumberFormat("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                    }).format(50)}
-                  </Td>
-                  <Td>
-                    <Button colorScheme={"purple"}>Editar</Button>
-                  </Td>
-                </Tr>
-              </Tbody>
-            </Table>
-          </Card>
+          <Table columns={columns} rows={data} />
         </Stack>
       </Main>
     </Content>

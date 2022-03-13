@@ -11,7 +11,7 @@ export default function Home() {
         <title>{`Bought_it | Login`}</title>
       </Head>
       <Flex w={"100vw"} h={"100vh"} align={"center"} justify={"center"}>
-        <Card as={"form"} maxWidth={360} width={"100%"} flexDir={"column"} >
+        <Card as={"form"} maxWidth={360} width={"100%"} flexDir={"column"} p={8} >
           <Stack spacing={6}>
           <Logo />
             <Input

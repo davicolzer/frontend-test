@@ -10,7 +10,7 @@ export function Card({ children, ...rest }: CardProps) {
     <Flex
       boxShadow={"xl"}
       bg={"white"} 
-      p={8}
+      p={4}
       borderRadius={8}
       {...rest}
     >
