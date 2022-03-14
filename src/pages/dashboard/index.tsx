@@ -2,7 +2,7 @@ import { Stack } from "@chakra-ui/react";
 import { Content } from "../../Templates/Content";
 import { H2 } from "../../components/Form/H2";
 import { Main } from "../../components/Main";
-import { HomeButtons } from "./DashboardButtons";
+import { HomeButtons } from "../../components/DashboardButtons";
 import { Table } from "../../components/Table";
 import { useEffect, useState } from "react";
 

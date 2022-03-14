@@ -1,5 +1,4 @@
 import { Button, HStack, SimpleGrid, Text } from "@chakra-ui/react";
-import { Card } from "../../components/Card";
 
 export function HomeButtons() {
   return (
