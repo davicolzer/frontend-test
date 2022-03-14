@@ -1,7 +1,13 @@
 [build]
 base = "."
-command= "yarn build"
+
+[context.production]
 publish = "./.next"
+command= "yarn build"
+
+[context.branch-deploy]
+publish = "./.next"
+command= "yarn dev"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
