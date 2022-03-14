@@ -1,5 +1,5 @@
 {
-  "name": "bought_it_frontend",
+  "name": "organize_it_frontend",
   "private": true,
   "scripts": {
     "dev": "next dev",

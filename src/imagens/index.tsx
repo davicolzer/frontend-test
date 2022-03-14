@@ -1,6 +1,4 @@
-import LogoIcon from "./logo.png";
+import LogoIcon from "./logo.svg";
 
-
-
-export { LogoIcon }
+export { LogoIcon };
 

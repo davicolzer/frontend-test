@@ -1,4 +1,4 @@
-import { Box, BoxProps, Flex, Stack } from "@chakra-ui/react";
+import { BoxProps, Flex, Stack } from "@chakra-ui/react";
 import Head from "next/head";
 import { ReactNode } from "react";
 import { Header } from "../../components/Header";
@@ -17,7 +17,7 @@ export function Content({
   return (
     <>
       <Head>
-        <title>{`Bought_it | ${titlePage}`}</title>
+        <title>{`Organize_it | ${titlePage}`}</title>
       </Head>
       <Flex {...rest}>
       <Sidebar />
