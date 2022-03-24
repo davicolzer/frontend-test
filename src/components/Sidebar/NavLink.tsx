@@ -22,14 +22,14 @@ export function NavLink({
         display={"flex"}
         alignItems={"center"}
         fontWeight={"bold"}
-        fontSize={"lg"}
+        fontSize={"md"}
         color={"purple.700"}
         p={5}
         borderRadius={"md"}
         _hover={{ bg: "purple.50" }}
         {...rest}
       >
-        <Icon as={icon} fontSize={28} />
+        <Icon as={icon} fontSize={"2xl"} />
         <Text ml={4} display={isMenuOpen? "block": "none"}>
           {children}
         </Text>

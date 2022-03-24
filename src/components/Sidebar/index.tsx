@@ -6,6 +6,7 @@ import { RiDashboardFill } from "react-icons/ri";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { BiLogOut } from "react-icons/bi";
 import { FaBoxes } from "react-icons/fa";
+import { BsFillInboxesFill } from "react-icons/bs";
 import { useState } from "react";
 import { OpenMenuIcon } from "./OpenMenuIcon";
 
@@ -27,6 +28,9 @@ export function Sidebar() {
           </NavLink>
           <NavLink isMenuOpen={opened} icon={FaBoxes} href={"/compras"}>
             Compras
+          </NavLink>
+          <NavLink isMenuOpen={opened} icon={BsFillInboxesFill} href={"/fornecedores"}>
+            Fornecedores
           </NavLink>
         </NavSection>
         <NavSection mt={"auto"}>
